@@ -40,8 +40,8 @@ export default {
   flex-direction: column;
 }
 #app .header {
-  height: 50px;
-  background: lightblue;
+  height: 60px;
+
 }
 #app .main {
   flex: 1;
@@ -50,11 +50,26 @@ export default {
 
 #app .main .left {
   width: 200px;
-  background: lightcoral;
+
 }
 
 #app .main .right {
+  padding: 10px; 
   flex: 1;
-  background: lightgray;
+  box-sizing: border-box; 
 }
+.flex{
+  display: flex;
+}
+.j-c{
+  justify-content:  center;
+}
+.j-s{
+  justify-content: space-between;
+}
+.a-c{
+  align-items: center;
+
+}
+
 </style>
