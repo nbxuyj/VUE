@@ -14,19 +14,24 @@ let myPlugins={
 
            //添加全局组件。
            Vue.component('b-button',{
-               template:'<button style="background:skyblue" @click="click"><slot><slot></button>',
-               methods:{
-                   click(){
-                       alert('点我干嘛！')
-                   }
-               }
+            //    template:'<button style="background:skyblue" @click="click"><slot><slot></button>',
+            //    methods:{
+            //        click(){
+            //            alert('点我干嘛！')
+            //        }
+            //    }
+
+            render :h=>{
+                    return h('button','我是自定义按钮');
+            }
+
            })
 
            //全局混入。
            Vue.mixin({
                data(){
                    return {
-                       goolses:['青菜','海鲜']
+                       goodses:['青菜','海鲜']
                    }
                },
                methods:{
