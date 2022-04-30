@@ -40,11 +40,29 @@ let myPlugins={
                    }
                },
                mounted(){
-                   console.log("页面挂载完毕。。。。");
+                   //console.log("页面挂载完毕。。。。");
                }
 
 
-           });
+           })
+
+           //自定义指令:这个方法需要传两个参数：指令名称，配置对象。
+           Vue.directive('red',{
+               //配置时inserted
+               //当元素绑定时，会调用该方法。 el返回的是绑定的元素。binding返回的是元素属性。
+
+               inserted:function(el,binding){
+                    //console.log(el,binding);
+                    el.style.color='red';
+               }
+           })
+
+           //给指令传值。
+           Vue.directive('color',{
+            inserted:function(el,binding){
+                 el.style.color=binding.value;
+            }
+        })
     }
 }
 
