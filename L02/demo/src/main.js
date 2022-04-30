@@ -20,3 +20,7 @@ new Vue({
 
   router
 }).$mount('#app')
+
+
+import * as abc from './utils'
+console.log(abc);
