@@ -7,6 +7,11 @@ Vue.config.productionTip = false
 import router from './router'
 
 
+//导入自定义的插件。
+import bingPlugin from './plugins'
+//use方法 就是调用install方法。
+Vue.use(bingPlugin);
+console.log(new Vue());
 
 //创建Vue实例。
 new Vue({
