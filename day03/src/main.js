@@ -10,6 +10,15 @@ import 'element-ui/lib/theme-chalk/index.css';
 //引入的是插件，需要use.
 Vue.use(ElementUI);
 
+
+//引用wiper，轮播图。
+import 'swiper/css/swiper.css'
+import  VueAwesomeSwiper  from  'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
+
+
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
