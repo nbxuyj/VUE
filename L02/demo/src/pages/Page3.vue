@@ -1,26 +1,25 @@
 <template>
-    <div>
+  <div>
     <h2>page3</h2>
-    </div>
+    <SH/>
+  </div>
 </template>
 
 <script>
+
+
+import SH from '../components/Shanghai.vue'
 export default {
-    name: 'Page3',
-    components: {
-
-    },
-    data() {
-        return {
-
-        };
-    },
-    methods: {
-
-    }
+  name: "Page3",
+  components: {
+    SH,
+  },
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
 <style  scoped>
-
 </style>
