@@ -2,6 +2,7 @@
   <div>
     <h2>page1</h2>
     <Nanjing/>
+    <h2>{{myName}}</h2>
   </div>
 </template>
 
