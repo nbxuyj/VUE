@@ -5,5 +5,8 @@ module.exports = defineConfig({
   devServer:{
     port:8082,
     open:true,
+  },
+  configureWebpack:{
+    devtool:'source-map'
   }
 })
