@@ -18,7 +18,13 @@ Vue.use(VueAwesomeSwiper)
 
 
 
+//默认index.js可以省略。
+import router from './router'
+
+
+
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')

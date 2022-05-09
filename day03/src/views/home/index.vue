@@ -1,26 +1,25 @@
 <template>
   <div id="app">
-    <!-- <div class="header"><Header></Header></div>
+    <div class="header"><Header></Header></div>
     <div class="main">
       <div class="left"><Left></Left></div>
       <div class="right"><Right></Right></div>
-    </div> -->
-    <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-// import Header from "../components/Header.vue";
-// import Left from "../components/Left.vue";
-// import Right from "../components/Right.vue";
+import Header from "./menu/Header.vue";
+import Left from "./menu/Left.vue";
+import Right from "./menu/Right.vue";
 
 export default {
-  name: "App",
+  name: "index",
   //注册其它组件
   components: {
-    // Header,
-    // Left,
-    // Right,
+    Header,
+    Left,
+    Right,
   },
   data() {
     return {};
