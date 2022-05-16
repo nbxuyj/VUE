@@ -22,6 +22,8 @@ Vue.use(VueAwesomeSwiper)
 import router from './router'
 
 
+//import './permission'
+
 
 
 new Vue({

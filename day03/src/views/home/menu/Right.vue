@@ -30,6 +30,9 @@ export default {
       //子组件返回的内容。
         alert(val);
     },
+     handleClick(tab, event) {
+        console.log(tab, event);
+      },
   },
 };
 </script>

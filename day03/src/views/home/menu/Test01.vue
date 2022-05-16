@@ -106,7 +106,7 @@ export default {
   //计算属性。
   computed: {
     swiper() {
-      return this.$refs.mySwiper.$swiper;
+      return this.$refs.mySwiper.swiper;
     },
   },
   //问题：点击显示时不会再次显示。

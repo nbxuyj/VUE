@@ -74,6 +74,11 @@ methods: {
     resetForm(formName) {
         this.$refs[formName].resetFields();
       }
+
+      ,login (name,password)
+      {
+
+      }
   }
 };
 </script>
