@@ -19,7 +19,7 @@ import bingPlugin from './plugins'
 import store from './store'
 
 // 导入模拟数据。
-import "./mock/index.js"
+import "../mock/index.js"
 
 //use方法 就是调用install方法。
 Vue.use(bingPlugin);

@@ -8,5 +8,8 @@
 
 module.exports = {
   //在开发环境中不使用esLint帮我们做语法检查。
-  lintOnSave: false
+  lintOnSave: false,
+  configureWebpack: {
+    devtool: 'source-map'
+    }
 }
