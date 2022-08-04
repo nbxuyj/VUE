@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="header"><Header></Header></div>
+    <div class="header"><Header :userName="userName"></Header></div>
     <div class="main">
       <div class="left"><Left></Left></div>
       <div class="right"><Right></Right></div>
@@ -12,7 +12,7 @@
 import Header from "./menu/Header.vue";
 import Left from "./menu/Left.vue";
 import Right from "./menu/Right.vue";
-
+//import request from '../../utils/request';
 export default {
   name: "index",
   //注册其它组件
@@ -22,8 +22,26 @@ export default {
     Right,
   },
   data() {
-    return {};
+    return {
+      userName: '测试',
+
+    };
+  },
+    mounted () {
+    //获取用户。
+    this.getUser()
+  },
+  methods:{
+     getUser () {
+      var user = JSON.parse(localStorage.user)
+      if (user) {
+        this.userName = user.UserID + '/' + user.UserName
+      } else {
+        this.userName = '未登入'
+      }
+    },
   }
+
 
 };
 </script>

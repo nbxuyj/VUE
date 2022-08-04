@@ -16,7 +16,13 @@
     &nbsp;
     <!--方案2.手动跳转。 -->
     <button @click="gotoPage3">手动跳转Page3</button>
-
+    <router-link to="/B01">B01.Vuex.Store用法</router-link> &nbsp;
+    <router-link to="/P5">P5.Watch用法</router-link> &nbsp;
+    <router-link to="/P13">P13计算属性</router-link> &nbsp;
+    <router-link to="/B02">B02Getters用法</router-link> &nbsp;
+    <router-link to="/B03">B03Actions用法</router-link> &nbsp;
+    <router-link to="/B04">B04LocalStorage用法</router-link> &nbsp;
+    <router-link to="/B05">B05Mock</router-link> &nbsp;
     <router-view></router-view>
   </div>
 </template>

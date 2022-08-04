@@ -14,7 +14,7 @@
       <el-menu-item index="2">邮件中心</el-menu-item>
       <el-submenu index="3">
         <template slot="title">我的工作台</template>
-        <el-menu-item index="3-1">个人中心</el-menu-item>
+        <el-menu-item index="3-1">个人中心（{{userName}}）</el-menu-item>
         <el-menu-item index="3-2">修改密码</el-menu-item>
         <el-menu-item index="3-3">退出系统</el-menu-item>
       </el-submenu>
@@ -23,10 +23,11 @@
 </template>
 <script>
 export default {
+  props: ["userName"],
   data() {
     return {
       //导航中默认选中的索引。
-      activeIndex: "2",
+      activeIndex: "2"
     };
   },
   methods: {

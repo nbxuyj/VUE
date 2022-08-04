@@ -3,12 +3,24 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
+//许要军2022.08.04启用axios,用于测试Mock数据。
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
+
 //默认index.js可以省略。
 import router from './router'
 
 
 //导入自定义的插件。
 import bingPlugin from './plugins'
+
+import store from './store'
+
+// 导入模拟数据。
+import "./mock/index.js"
+
 //use方法 就是调用install方法。
 Vue.use(bingPlugin);
 console.log(new Vue());
@@ -22,8 +34,8 @@ new Vue({
   //   //通过routes配置具体的路由信息，每一条路由信息需要配置一个对象，至少包含path component
   //   routes: router
   // })
-
-  router
+  router,
+  store
 }).$mount('#app')
 
 //导入全部成员转为一个对象来接收。
