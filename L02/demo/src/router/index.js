@@ -19,8 +19,8 @@ import B02 from "../pages/B02Getters.vue";
 import B03 from "../pages/B03Actions.vue";
 import B04 from "../pages/B04LocalStorage.vue";
 import B05 from "../pages/B05Mock.vue";
-
-
+import B06 from "../pages/B06Minxins.vue";
+import P15 from "../pages/P15表单提交.vue";
 
 //创建一个路由器对象并配置路由信息放到外面。
 export default new VueRouter({
@@ -99,6 +99,20 @@ export default new VueRouter({
       path: '/B05',
       //当前路由的组件。
       component: B05
+    }
+    ,
+    {
+      //请求路由的路径
+      path: '/B06',
+      //当前路由的组件。
+      component: B06
+    }
+    ,
+    {
+      //请求路由的路径
+      path: '/P15',
+      //当前路由的组件。
+      component: P15
     }
   ]
 

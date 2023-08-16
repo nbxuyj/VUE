@@ -3,19 +3,14 @@ import Cookies from 'js-cookie'
 const TokenKey = 'Admin-Token'
 
 
-
-
-
-
-
 export function getToken() {
- // return Cookies.get(TokenKey)
- return(localStorage.getItem("data"));
+ return Cookies.get(TokenKey)
+ //return(localStorage.getItem("data"));
 }
 
 export function setToken(token) {
-  localStorage.setItem("data", token);
-  //return Cookies.set(TokenKey, token)
+  //localStorage.setItem("data", token);
+  return Cookies.set(TokenKey, token)
 }
 
 export function removeToken() {

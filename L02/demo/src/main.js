@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 Vue.config.productionTip = false
-
+Vue.prototype.$log=window.console.log;
 //许要军2022.08.04启用axios,用于测试Mock数据。
 
 import axios from 'axios'
@@ -19,7 +19,13 @@ import bingPlugin from './plugins'
 import store from './store'
 
 // 导入模拟数据。
-import "../mock/index.js"
+import "../mock/goods"
+
+// ellementUI支持
+
+import ElementUI from 'element-ui'; // 2.1引入结构
+import 'element-ui/lib/theme-chalk/index.css'; // 2.2引入样式
+Vue.use(ElementUI)
 
 //use方法 就是调用install方法。
 Vue.use(bingPlugin);
